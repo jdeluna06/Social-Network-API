@@ -1,13 +1,13 @@
 import express from "express";
 import db from "./config/connection.js";
-import apiRoutes from "./routes/index.js";
+import routes from "./routes/index.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 db()
     .then(() => {
-    app.use("/api", apiRoutes);
+    app.use(routes);
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
     });

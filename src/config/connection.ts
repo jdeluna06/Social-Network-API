@@ -3,11 +3,7 @@ import mongoose from "mongoose";
 const db = async (): Promise<typeof mongoose.connection> => {
   try {
     await mongoose.connect(
-      process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/socialNetworkDB",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      } as mongoose.ConnectOptions
+      process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/socialNetworkDB"
     );
     console.log("Database connected.");
     return mongoose.connection;
