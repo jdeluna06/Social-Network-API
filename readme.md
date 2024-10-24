@@ -65,6 +65,7 @@ npm start
 
 5. **Walkthrough Video:**
    For a detailed walkthrough of how the application works, please refer to the video linked below:
+   https://drive.google.com/file/d/1kebt1IOoIRbwmQ7fC-Eu-6VPRWvfBj9l/view?usp=sharing
 
 
 ## Usage
